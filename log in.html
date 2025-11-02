@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+ 
+        body {
+
+
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+       
+        .login-container {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 1200px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+   
+        .left-panel {
+            flex: 1.5; 
+            padding: 40px 50px;
+            background-color: #f8f7ff; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+      
+        .illustration-placeholder {
+            
+            height: 450px; 
+            background-color: #e5e5f5;
+            border-radius: 8px;
+         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #5d2b7f;
+            font-size: 0.9em;
+            text-align: center;
+            font-style: italic;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="%235d2b7f">Illustration Placeholder</text></svg>');
+        }
+        
+    
+        .right-panel {
+            flex: 1; 
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+        .social-icons {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+        .social-icons a {
+            margin-left: 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .fa-facebook-f { color: #4267B2; }
+        .fa-youtube { color: #FF0000; }
+        .fa-linkedin-in { color: #0077B5; }
+
+
+        .welcome-text h2 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .welcome-text p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+    
+        .input-group {
+            margin-bottom: 25px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .input-container {
+            position: relative;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        .input-container input:focus {
+            border-color: #5d2b7f;
+            outline: none;
+        }
+
+        .forgot-password {
+            font-size: 0.85em;
+            color: #5d2b7f;
+            text-decoration: none;
+            float: right;
+        }
+        
+        .password-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 5px;
+        }
+
+     
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .remember-me input {
+            margin-right: 8px;
+        }
+
+        .sign-in-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #6C5CE7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .sign-in-button:hover {
+            background-color: #5d2b7f;
+        }
+        
+        /* footer */
+        .info-footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.75em;
+            color: #999;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login-container">
+        <div class="left-panel">
+            <div class="logo-section">
+               <a href="index.html"><img src="images/file.PNG" alt="" style="height: 40px; margin-right: 15px;"></a> 
+                <h1 style="font-size: 1.8em; color: #5d2b7f;">AL ITTIHAD ACADEMY</h1>
+            </div>
+
+            <div class="">
+                 <img src="images/hero.png" alt="" style="height: auto; margin-right: auto;">
+               
+                            </div>
+
+            </div>
+
+        <div class="right-panel">
+            <div class="social-icons">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="welcome-text">
+                <h2>Welcome to AIA </h2>
+                <p>Please sign-in to your account and start the adventure.</p>
+            </div>
+
+            <form>
+                <div class="input-group">
+                    <label for="username">User Name</label>
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" placeholder="Enter User Name" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="password-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #aaa;"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                
+                <button type="submit" class="sign-in-button">Sign In</button>
+            </form>
+
+            <div class="info-footer">
+                <p>Knowledge | Frequently Asked Question | Helpdesk</p>
+                <p>Email: alittihad2025@gmail.com | Hotline 01764753858</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
